@@ -1,23 +1,28 @@
-my_dict = { 'Sergey': 2005, 'Dmitriy':2001, 'Roman':2004 }
+my_dict = {'Sergey' : 1985, 'Anton' : 1984, 'Sasha' : 1986, 'Jenya' : 1995}
 
-print('Dict: ', my_dict)
-print('Exicting value: ', my_dict['Sergey'])
-my_dict['Anton'] = 1999
-print('Not Existing value: ', my_dict['Anton'])
-my_dict.update({'Bob':2005,
-                'James':1965})
-a = my_dict.pop('Anton')
-print('Deleted Value: ', a)
-print('Modifed dict: ', my_dict)
+print(my_dict)
 
-print(" ")
+print(my_dict.get('Sergey'))
+print(my_dict.get('Denis'))
 
-my_set = {1, 2, 3, 4, 5, 1, 2, 3, 4}
-print('Set: ', my_set)
+my_dict.update({'Dasha' : 1990})
+my_dict['Nastya'] = 1988
+
+a = my_dict.pop('Sasha')
+print(a)
+
+print(my_dict)
+
+my_set = {1,2,3,3,2,1,'a', 'up',"a"}
+
+print(my_set)
+
+my_set.add(5)
 my_set.add(6)
-my_set.add(7)
-my_set.remove(4)
-print('Modifed Set', my_set)
+
+my_set.remove('up')
+
+print(my_set)
 
 
 
